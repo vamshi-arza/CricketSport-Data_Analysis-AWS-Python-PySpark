@@ -4,6 +4,16 @@
 
 ![ipl art](https://github.com/user-attachments/assets/3bc429b8-226f-4fb4-a578-80fe7ec7a6eb)
 
+### Table of Contents
+
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Tools Used](#tools-used)
+- [Data Cleaning](#data-cleaning)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Results](#results)
+- [Conclusion](#conclusion)
+
 ### Project Overview
 
 This project utilizes PySpark to analyze IPL cricket data from CSV files stored in an S3 bucket. It aims to calculate runs, identify impactful balls, and examine toss and win margins. Data cleaning involves filtering invalid entries and normalizing player names. Key insights include running total runs per over, win margin categorization, and toss-match winner correlations. Technologies used include Apache Spark, PySpark, AWS S3, and databricks, delivering strategic analytics on match performance, player statistics, and team dynamics.
