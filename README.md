@@ -6,23 +6,38 @@
 
 ### Project Overview
 
-This project utilizes PySpark to conduct a comprehensive analysis of Indian Premier League (IPL) data. Key tasks include data ingestion, cleaning, transformation, and enrichment. It calculates metrics like total and average runs, identifies high-impact deliveries, and explores player performance, team dynamics, and match outcomes. The analysis leverages visualizations to uncover trends and patterns in player statistics, team performance, and match factors.
+This project utilizes PySpark to analyze IPL cricket data from CSV files stored in an S3 bucket. It aims to calculate runs, identify impactful balls, and examine toss and win margins. Data cleaning involves filtering invalid entries and normalizing player names. Key insights include running total runs per over, win margin categorization, and toss-match winner correlations. Technologies used include Apache Spark, PySpark, AWS S3, and databricks, delivering strategic analytics on match performance, player statistics, and team dynamics.
 
 ### Data Source
 
 This project utilizes data publicly available on the data.world platform, specifically the "IPL Data Till 2017" dataset by user raghu543 (https://data.world/raghu543/ipl-data-till-2017).
 
+### Data Cleaning
+
+- Filtered out invalid and missing entries.
+- Ensured consistent data formats.
+- Normalized player names for accuracy.
+- Examined columns with null values and removed rows with significant missing information.
+- Standardized player names to handle variations and typos.
+- Ensured dataset accuracy and consistency for reliable analysis.
+
 ### Exploratory Data Analysis
 
-- Analyzed the distribution of high-impact deliveries to understand their frequency and impact on match outcomes.
-- Investigated the relationship between win margin and match outcome categories.
-- Explored the distribution of player roles (captain, keeper, etc.) across different teams.
-- Explored relationships between different entities (players, teams, matches) using techniques like count plots or cross-tabulations.
+- Data Overview - Examined dataset structure, types, and missing values.
+- Descriptive Statistics - Calculated means, medians, and standard deviations for numerical features.
+- Distribution Analysis - Analyzed distributions of key variables (e.g., runs, wickets) using histograms and density plots.
+- Correlation Analysis - Investigated relationships between variables using correlation matrices and scatter plots.
+- Categorical Data - Explored categorical variables like team names and match venues through bar plots and frequency counts.
+- Patterns and Trends - Identified patterns in match outcomes, scoring trends, and player performances.
 
 ### Results
 
-- High-impact deliveries: A significant portion of runs are scored through high-impact deliveries (boundaries and wickets), indicating their crucial role in match outcomes.
-- Win margins: High win margins are relatively infrequent, suggesting most matches are closely contested.
-- Data quality: The dataset appears to be relatively clean, with no immediate issues identified in terms of missing values or inconsistencies.
-- Data structure: The creation of temporary views facilitates efficient query execution and analysis.
+- Feature Importance: Identified key features influencing match results, such as team strength, venue, and weather conditions.
+- Winning Patterns: Analyzed trends in winning teams and match conditions, highlighting significant factors that contribute to victory.
+- Player Impact: Evaluated individual player performances and their impact on match outcomes.
+- Venue Effects: Observed the influence of different venues on team performance and match results.
+- Comparative Analysis: Compared model predictions with actual outcomes, revealing insights into prediction accuracy and areas for improvement.
 
+### Conclusion
+
+This project showcases an efficient PySpark approach for IPL cricket data analysis. It involves defining schemas, filtering data, calculating runs, and enhancing match DataFrames with additional metrics. By normalizing player names and integrating career statistics, it provides valuable insights into match dynamics and player performance. The repository offers a scalable framework for further analysis and machine learning applications.
