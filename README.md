@@ -12,6 +12,14 @@ This project utilizes PySpark to analyze IPL cricket data from CSV files stored 
 
 This project utilizes data publicly available on the data.world platform, specifically the "IPL Data Till 2017" dataset by user raghu543 (https://data.world/raghu543/ipl-data-till-2017).
 
+### Tools Used
+
+- Amazon S3 - For storing and accessing CSV files.
+- Databricks - For creating and managing the Spark session and data processing.
+- Python - For scripting and data manipulation.
+- SQL - For querying and manipulating data within Spark.
+- PySpark - For data processing and analysis using Apache Spark.
+
 ### Data Cleaning
 
 - Filtered out invalid and missing entries.
